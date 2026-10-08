@@ -11,4 +11,5 @@ The model loads in the training and testing files, performs the same changes on 
 A Gradient Boosting Classifier is used to train the model on the training set before applying it to the testing set. This Classifier specifies the learning rate of the model and number of leaf nodes per iteration to not overfit or underfit the model. The predicted shot make probabilities are generated and read into each one's corresponding shot ID of the testing set. These results are populated in the text file with precise predictions for each shot. 
 
 The target variable of the shot's binary outcome is numerically encoded to evaluate the fit of the model by the Gradient Boosting Classifier. The log loss score is computed by measuring the predicted shot make probability against actual binary outcome values. 
-  - A log loss score of only 0.49672164765935883 is computed, denoting significant predictive value in the model far below a baseline rate of about 0.693 if a 50% probability 
+  - A log loss score of only 0.49672164765935883 is computed, denoting significant predictive value in the model far below a baseline rate of about 0.693 if a 0.5 probability prediction was assigned to each shot
+  - 
