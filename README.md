@@ -5,4 +5,6 @@ This project trains and fits a model on 425,719 non-fouled field goal shots in t
   - testing.csv: Holds data for 213,977 non-fouled field goal shots with 27 features identical to those in training set but no target variable
   - submission.txt: Text file with shot IDs corresponding to those in testing set that is populated with each shot's predicted make probability
     
-The model loads in the training and testing files, performs the same changes on both under one function to eliminate features, encode them or engineer new ones and 
+The model loads in the training and testing files, performs the same changes on both under one function to eliminate features, encode them or engineer new ones and then applies the changes identically to the data sets to ensure data alignment before loading them again.
+  - A Softmax weighting approach through Euler's number value is used on a feature holding four floats in an array to return exponentially prioritized value 
+A Gradient Boosting Classifier is used to train the model on the training set before applying it to the testing set. 
