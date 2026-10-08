@@ -15,4 +15,4 @@ The target variable of the shot's binary outcome is numerically encoded to evalu
   - Fitting on distance of shot from basket, number of shot contesters, distance of the contester(s) to shooter or shot type (layup, jumper, floater) would only incrementally minimize computed log loss of predicted probability, necessitating combination of encoded features
   - Computed log loss minimized through engineering of features with high predictive value and correlation with other highly predictive features, including pairing as a feature shot type and distance from basket or calculation of shot angle using shooter's position
 
-Log loss score of 0.49672164765935883 is achieved through combination of incremental improvements to predictive ability of model, iteratively boosted by creation of small decision trees
+Log loss score of 0.49672164765935883 is achieved through combination of incremental improvements to predictive ability of model, boosted iteratively by creation of small decision trees
